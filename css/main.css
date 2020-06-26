@@ -1,0 +1,183 @@
+/***** BASE STYLES *****/
+    body {
+    font-family: "Roboto", sans-serif;
+    color: #095256;
+    font-size: 24px;
+    }
+
+    #work {
+        height: 1450px;
+    }
+    
+    #about {
+        height: 650px;
+    }
+
+    #contact {
+        height: 420px;
+    }
+    
+
+    /***** GRID *****/
+    .full-width {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .half-width {
+        width: 600px;
+        float: left; 
+    }
+    
+    .third-width {
+        width: 400px;
+        float: left;
+    }
+    
+    .portfolio-item {
+        height: 400px;
+    }
+
+    /******HEADER*****/
+    
+    header {
+        height: 800px;
+        background: url("../img/hero-image.png");
+        background-size: cover;
+    }
+
+    header h1 {
+        margin-top: 0;
+        padding-top: 350px;
+        font-family: 'Roboto Slab', serif;
+        font-size: 60px;
+        text-align: center;
+        color: #bdbf09;
+    }
+
+    header h2 {
+        padding: 0px 50px;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 400;
+    }
+
+/*** WORK ***/
+
+#work h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+span {
+    font-weight: 700;
+}
+
+#work p {
+    margin-top: 0;
+}
+
+#work img {
+    border: 1px solid #b7b7b7;
+}
+
+#work a {
+    text-decoration: none;
+    color: #095256;
+}
+
+#work a:visited {
+    color: #095256;
+}
+
+#work a:hover {
+    color: #bdbf09;
+    
+}
+
+
+
+/***ABOUT***/
+#about {
+    background-color: #087e8b; /* #7eafa4;*/
+    color: white;
+    text-align: center;
+}
+
+#about h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0; 
+    padding-top: 30px;
+}
+
+span {
+    font-weight: 700;
+}
+
+#about img {
+    border: 2px solid #b7b7b7;
+}
+
+#about p {
+    width: 800px;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+/***CONTACT***/
+
+#contact {
+    background-color: #095156;
+    color: white;
+}
+
+#contact h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+#contact h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px; 
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+}
+
+
+#contact ul {
+    list-style: none;
+    padding-left: 100px;
+}
+
+#contact ul li {
+     display: inline-block;
+}
+
+#contact ul img {
+    font-size: 18px;
+    padding-left: 30px;
+    
+}
+
+
+p.copyright {
+    font-size: 18px;
+    padding-top: 50px;
+    margin: 0 auto;
+    clear: both;
+    
+}
+
+div.icon {
+    text-align: center;
+}
