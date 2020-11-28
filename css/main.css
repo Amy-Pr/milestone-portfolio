@@ -1,183 +1,343 @@
 /***** BASE STYLES *****/
+    
+    html {
+        font-size: 16px; 
+    }
+
     body {
-    font-family: "Roboto", sans-serif;
-    color: #095256;
-    font-size: 24px;
+        font-family: "Roboto", sans-serif;
+        color: #095256;
+        font-size: 1.2em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    #work {
-        height: 1450px;
-    }
-    
-    #about {
-        height: 650px;
+    .content-wrapper {
+        width: 90%;
     }
 
-    #contact {
-        height: 420px;
-    }
-    
-
-    /***** GRID *****/
-    .full-width {
-        width: 1200px;
-        margin: 0 auto;
-    }
-    
-    .half-width {
-        width: 600px;
-        float: left; 
-    }
-    
-    .third-width {
-        width: 400px;
-        float: left;
-    }
-    
-    .portfolio-item {
-        height: 400px;
+    img {
+        width: 100%;
+        height: auto;
     }
 
-    /******HEADER*****/
-    
+
+/******HEADER*****/
     header {
-        height: 800px;
-        background: url("../img/hero-image.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .hero-area {
+        min-height: 800px;
+        background: url("../img/hero-image.png") right top no-repeat;
         background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     header h1 {
-        margin-top: 0;
-        padding-top: 350px;
+        
         font-family: 'Roboto Slab', serif;
-        font-size: 60px;
+        font-size: 3rem;
         text-align: center;
         color: #bdbf09;
     }
 
     header h2 {
-        padding: 0px 50px;
+        margin-top: 0;
         text-align: center;
-        font-size: 48px;
+        font-size: 2.2rem;
         font-weight: 400;
+        width: 80%;
+    }
+
+    .hero-area .content-wrapper {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        background: rgba(242, 242, 242, 0.8);
+        border-radius: 10px;
     }
 
 /*** WORK ***/
+    .work {
+        display: flex;
+        justify-content: center;
+    }
 
-#work h2 {
+    .work .content-wrapper {
+        display: flex;
+        max-width: 554px;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    .portfolio-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .portfolio-description {
+        margin-top: 50px;
+    }
+
+    .work h2 { 
     font-family: 'Roboto Slab', serif;
-    font-size: 36px;
-    text-align: center;
-    padding-bottom: 90px;
-}
+    font-size: 1.75rem;
+    text-align: center; /*how can I get rid of this with flex?*/
+    padding-bottom: 90px; /*may need to change this*/
+    }
 
-span {
-    font-weight: 700;
-}
+    span {
+        font-weight: 700;
+    }
 
-#work p {
-    margin-top: 0;
-}
+    .work p {
+        margin-top: 0;
+    }
 
-#work img {
-    border: 1px solid #b7b7b7;
-}
+    .work img {
+        border: 1px solid #b7b7b7;
+    }
 
-#work a {
-    text-decoration: none;
-    color: #095256;
-}
+    .work a {
+        text-decoration: none;
+        color: #095256;
+    }
 
-#work a:visited {
-    color: #095256;
-}
+    .work a:visited {
+        color: #095256;
+    }
 
-#work a:hover {
-    color: #bdbf09;
+    .work a:hover {
+        color: #bdbf09;
     
-}
-
+    }
 
 
 /***ABOUT***/
-#about {
+
+
+.about {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
     background-color: #087e8b; /* #7eafa4;*/
     color: white;
     text-align: center;
 }
 
-#about h2 {
+.about .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about h2 {
     font-family: 'Roboto Slab', serif;
-    font-size: 36px;
-    text-align: center;
-    margin-top: 0; 
-    padding-top: 30px;
+    font-size: 1.75rem;
 }
 
 span {
     font-weight: 700;
 }
 
-#about img {
+.about img {
     border: 2px solid #b7b7b7;
 }
 
-#about p {
-    width: 800px;
-    margin: 20px auto;
+
+.about p {
     line-height: 1.5;
 }
 
+
+
+
 /***CONTACT***/
 
-#contact {
+.contact {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #095156;
     color: white;
 }
 
-#contact h2 {
+.contact .content-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.contact-content {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.contact h2 {
     font-family: 'Roboto Slab', serif;
-    font-size: 36px;
-    text-align: center;
-    margin-top: 0;
-    padding-top: 30px;
+    font-size: 1.75rem;
 }
 
-#contact h3 {
+.contact h3 {
     font-family: "Roboto", sans-serif;
-    font-size: 24px; 
-    text-align: center;
-}
+    font-size: 1.5rem; 
 
-#contact p {
-    text-align: center;
 }
 
 
-#contact ul {
-    list-style: none;
-    padding-left: 100px;
+.social-icons {
+    display: flex;
+    justify-content: space-between;
 }
 
-#contact ul li {
-     display: inline-block;
+.social-icons p {
+    margin: 0;
 }
 
-#contact ul img {
-    font-size: 18px;
-    padding-left: 30px;
-    
+
+.social-media {
+    margin-bottom: 30px;
+}
+
+
+.contact img {
+    font-size: 1.125rem;
 }
 
 
 p.copyright {
-    font-size: 18px;
-    padding-top: 50px;
-    margin: 0 auto;
-    clear: both;
-    
+    font-size: 1.125rem;
+    margin: 50px 0 0 0;
 }
 
-div.icon {
-    text-align: center;
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/****TABLET STYLES****/
+
+@media (min-width: 768px) {
+    .contact-content {
+        flex-direction: row;
+        min-height: 0px;
+    } 
+    
+    .bio {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+        
+    }
+    
+    header h2 {
+        font-size: 2.8rem;
+    }
+
+    body {
+        font-size: 1.5em;
+    }
+}
+
+
+/****DESKTOP STYLES****/
+@media (min-width: 1200px) {
+
+/***Base Styles***/
+
+
+
+header h1 {
+    font-size: 3.75rem;
+}
+
+header h2 {
+    font-size: 3rem;
+}
+
+.hero-area {
+    background: url("../img/hero-image.png") top center no-repeat;
+    background-size: cover;
+}
+
+.hero-area .content-wrapper {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: none;
+    border-radius: none;
+    padding-top: 140px;
+}
+
+/**ABOUT**/
+
+.about h2 {
+    font-size: 2.25rem;
+}
+
+.bio {
+    width: 55%;
+}
+
+/*** WORK ***/
+.work h2 {
+    font-size: 2.25rem;
+}
+
+.work .content-wrapper {
+    max-width: 90%;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+}
+
+.portfolio-description {
+    width: 42%;
+    margin-top: 0;
+    padding-left: 50px;
+}
+
+/***CONTACT***/
+
+.contact h2 {
+    font-size: 2.25rem;
+}
+
+.contact .content-wrapper {
+    width: 80%;
+}
+
+.social-icons {
+    width: 6em;
+}
+
 }
