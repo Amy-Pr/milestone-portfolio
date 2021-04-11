@@ -92,8 +92,8 @@
     .work h2 { 
     font-family: 'Roboto Slab', serif;
     font-size: 1.75rem;
-    text-align: center; /*how can I get rid of this with flex?*/
-    padding-bottom: 90px; /*may need to change this*/
+    text-align: center; 
+    padding-bottom: 90px; 
     }
 
     span {
@@ -130,7 +130,7 @@
     display: flex; 
     justify-content: center;
     align-items: center; 
-    background-color: #087e8b; /* #7eafa4;*/
+    background-color: #087e8b; 
     color: white;
     text-align: center;
 }
