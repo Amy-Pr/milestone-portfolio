@@ -1,0 +1,390 @@
+/***** BASE STYLES *****/
+
+    .container {
+        width: 100%;
+    }
+    
+    html {
+        font-size: 16px; 
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+        color: #095256;
+        font-size: 1.2em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-wrapper {
+        width: 90%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+
+/******HEADER*****/
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .hero-area {
+        min-height: 800px;
+        background: url("../img/hero-image.png") right top no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    header h1 {
+        
+        font-family: 'Roboto Slab', serif;
+        font-size: 3rem;
+        text-align: center;
+        color: #bdbf09;
+    }
+
+    header h2 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 400;
+        width: 80%;
+    }
+
+    .hero-area .content-wrapper {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        background: rgba(242, 242, 242, 0.8);
+        border-radius: 10px;
+    }
+
+    /*** CASE STUDY PAGE ***/
+    #headline {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .case-study-description {
+        margin-bottom: 50px;
+    }
+
+
+
+    .case-items {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        margin-bottom: 50px;
+    }
+
+    .case-image {
+        margin-bottom: 50px;
+    }
+
+    figcaption {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    
+
+/*** WORK ***/
+    .work {
+        display: flex;
+        justify-content: center;
+    }
+
+    .work .content-wrapper {
+        display: flex;
+        max-width: 554px;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    .portfolio-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .portfolio-description {
+        margin-top: 50px;
+    }
+
+    .work h2 { 
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.75rem;
+    text-align: center; 
+    padding-bottom: 90px; 
+    }
+
+    span {
+        font-weight: 700;
+    }
+
+    .work p {
+        margin-top: 0;
+    }
+
+    .work img {
+        border: 1px solid #b7b7b7;
+    }
+
+    .work a {
+        text-decoration: none;
+        color: #095256;
+    }
+
+    .work a:visited {
+        color: #095256;
+    }
+
+    .work a:hover {
+        color: #bdbf09;
+    
+    }
+
+
+/***ABOUT***/
+
+
+.about {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background-color: #087e8b; 
+    color: white;
+    text-align: center;
+}
+
+.about .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.75rem;
+}
+
+span {
+    font-weight: 700;
+}
+
+.about img {
+    border: 2px solid #b7b7b7;
+}
+
+
+.about p {
+    line-height: 1.5;
+}
+
+
+
+
+/***CONTACT***/
+
+.contact {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #095156;
+    color: white;
+}
+
+.contact .content-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.contact-content {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.contact h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.75rem;
+}
+
+.contact h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem; 
+
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons p {
+    margin: 0;
+}
+
+
+.social-media {
+    margin-bottom: 30px;
+}
+
+
+.contact img {
+    font-size: 1.125rem;
+}
+
+
+p.copyright {
+    font-size: 1.125rem;
+    margin: 50px 0 0 0;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/****TABLET STYLES****/
+
+@media (min-width: 768px) {
+    .contact-content {
+        flex-direction: row;
+        min-height: 0px;
+    } 
+    
+    .bio {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+        
+    }
+    
+    header h2 {
+        font-size: 2.8rem;
+    }
+
+    body {
+        font-size: 1.5em;
+    }
+}
+
+
+/****DESKTOP STYLES****/
+@media (min-width: 1200px) {
+
+/***Base Styles***/
+
+
+
+header h1 {
+    font-size: 3.75rem;
+}
+
+header h2 {
+    font-size: 3rem;
+}
+
+.hero-area {
+    background: url("../img/hero-image.png") top center no-repeat;
+    background-size: cover;
+}
+
+.hero-area .content-wrapper {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: none;
+    border-radius: none;
+    padding-top: 140px;
+}
+
+/**ABOUT**/
+
+.about h2 {
+    font-size: 2.25rem;
+}
+
+.bio {
+    width: 55%;
+}
+
+/*** WORK ***/
+.work h2 {
+    font-size: 2.25rem;
+}
+
+.work .content-wrapper {
+    max-width: 90%;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+}
+
+.portfolio-description {
+    width: 42%;
+    margin-top: 0;
+    padding-left: 50px;
+}
+
+/***CONTACT***/
+
+.contact h2 {
+    font-size: 2.25rem;
+}
+
+.contact .content-wrapper {
+    width: 80%;
+}
+
+.social-icons {
+    width: 6em;
+}
+
+/**Case study page*/
+.case-image {
+    width: 45%;
+}
+
+#content-cases {
+    width: 70%;
+}
+
+}
