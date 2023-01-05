@@ -1,4 +1,8 @@
 /***** BASE STYLES *****/
+
+    .container {
+        width: 100%;
+    }
     
     html {
         font-size: 16px; 
@@ -39,6 +43,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     header h1 {
@@ -65,6 +70,39 @@
         background: rgba(242, 242, 242, 0.8);
         border-radius: 10px;
     }
+
+    /*** CASE STUDY PAGE ***/
+    #headline {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .case-study-description {
+        margin-bottom: 50px;
+    }
+
+
+
+    .case-items {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        margin-bottom: 50px;
+    }
+
+    .case-image {
+        margin-bottom: 50px;
+    }
+
+    figcaption {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    
 
 /*** WORK ***/
     .work {
@@ -338,6 +376,15 @@ header h2 {
 
 .social-icons {
     width: 6em;
+}
+
+/**Case study page*/
+.case-image {
+    width: 45%;
+}
+
+#content-cases {
+    width: 70%;
 }
 
 }
